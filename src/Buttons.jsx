@@ -14,11 +14,11 @@ const Button = ({ size, color, disabled, text }) => {
     blue: "bg-blue-400"
   }
 
-  let disabledChoice = disabled ? "opacity-30 cursor-not-allowed" : "";
+  let disabledChoice = disabled ? "opacity-20" : "";
 
   return (
     <button
-      className={`text-black rounded py-5 px-5 font-bold ${sizeChoice} ${colorChoice} ${disabledChoice}`}
+      className={`text-black rounded py-5 px-5 font-bold ${sizeChoice[size]} ${colorChoice[color]} ${disabledChoice}`}
       
     >
       {text}
