@@ -18,10 +18,10 @@ function App() {
       <Button size="large" color="green" text="Large Green" />
 
 
-      <h1 className="text-2xl font-bold mt-5">Alerts</h1>
-      <Alert color="red" icons="brightness" text="brightness"/> 
-      <Alert color="green" icons="brightness" text="brightness"/> 
-      <Alert color="green" icons="anchor" text="anchor"/> 
+      <h1 className="text-2xl font-bold mt-5 mb-5">Alerts</h1>
+      <Alert color="red" icon="warning" text="Warning"/> 
+      <Alert color="green" icon="warning" text="Warning"/> 
+      <Alert color="green" icon="anchor" text="anchor"/> 
       
       
       

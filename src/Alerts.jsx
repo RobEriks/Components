@@ -1,8 +1,9 @@
 import React from "react";
 import { TiAdjustBrightness, TiAdjustContrast, TiAnchor } from "react-icons/ti";
+import { IoIosWarning } from "react-icons/io";
 
 
-const Alert = ({ color, icons, text }) => {
+const Alert = ({ color, icon, text }) => {
 
     let colorChoice = {
         red: "bg-red-400",
@@ -11,7 +12,7 @@ const Alert = ({ color, icons, text }) => {
       }
     
     let iconChoice = {
-        brightness: <TiAdjustBrightness/>,
+        warning: <IoIosWarning/>,
         contrast: <TiAdjustContrast/>,
         anchor: <TiAnchor/>
     }
@@ -19,8 +20,8 @@ const Alert = ({ color, icons, text }) => {
 
 
     return (
-        <div className={` py-5  ${colorChoice[color]} `}>
-        {iconChoice[icons]}
+        <div className={` p-4 rounded-lg ${colorChoice[color]} `}>
+        {iconChoice[icon]}
         {text}
         </div>
     )
