@@ -2,32 +2,24 @@ import React from "react";
 
 const Button = ({ size, color, disabled, text }) => {
 
-  let sizeChoice = ""
-  let colorChoice = ""
-
-
-
-  if (size === "small") {
-    sizeChoice = "text-sm"
-  } else if (size === "medium") {
-    sizeChoice = "text-md"
+  let sizeChoice = {
+    small: "text-sm",
+    medium: "text-md",
+    large:  "text-lg"
   }
 
-  if (color === "red") {
-    colorChoice = "bg-red-500";
-  } else if (color === "green") {
-    colorChoice = "bg-green-500";
-  } else {
-    colorChoice = "bg-blue-500";
+  let colorChoice = {
+    red: "bg-red-400",
+    green: "bg-green-400",
+    blue: "bg-blue-400"
   }
-
 
   let disabledChoice = disabled ? "opacity-30 cursor-not-allowed" : "";
 
   return (
     <button
       className={`text-black rounded py-5 px-5 font-bold ${sizeChoice} ${colorChoice} ${disabledChoice}`}
-      disabled={disabled}
+      
     >
       {text}
     </button>
