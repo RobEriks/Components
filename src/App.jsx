@@ -37,7 +37,6 @@ function App() {
         <Card href="#" imgSrc="https://via.placeholder.com/200" imgAlt="Placeholder Image"/>
          
         
-{/* Kommentar */}
 
 
 
